@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import QuoteGenerator from "./components/QuoteGenerator";
-
 import "./css/app.css";
 
 class App extends Component {

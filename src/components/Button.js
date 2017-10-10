@@ -4,6 +4,7 @@ import "../css/button.css";
 const Button = props => {
     return (
         <button className="button" onClick={props.onClick}>
+            {props.icon} {" "}
             {props.text}
         </button>
     );
