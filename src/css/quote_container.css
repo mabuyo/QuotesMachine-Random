@@ -1,0 +1,22 @@
+.container {
+    margin: 10% auto auto auto;
+    background-color: #119DA4;
+    color: black;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    border-radius: 5px;
+}
+
+.quote-text {
+    font-size: 3em;
+}
+
+.quote-author {
+    font-size: 1em;
+    align-self: flex-end;
+    margin-right: 15px;
+}
