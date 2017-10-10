@@ -48,7 +48,7 @@ class QuoteGenerator extends Component {
                         onClick={this.populateTweet.bind(this)}
                     />
                     <Button
-                        text="new Quote()"
+                        text="QuotesMachine.next()"
                         textStyle={{
                             color: "#2aa198",
                             fontFamily: "'Roboto Mono', monospace",

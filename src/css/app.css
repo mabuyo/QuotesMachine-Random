@@ -3,3 +3,10 @@
     flex-direction: column;
     min-height: 100vh;
 }
+
+.title {
+    align-self:center;
+    font-family: 'Roboto Mono', monospace; 
+    color: #cb4b16;   
+    margin-top: 50px;
+}

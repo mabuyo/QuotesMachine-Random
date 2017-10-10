@@ -7,6 +7,7 @@ class App extends Component {
     render() {
         return (
             <div className="app-container">
+                <h1 className="title">QuotesMachine.random()</h1>
                 <QuoteGenerator />
                 <Footer />
             </div>
