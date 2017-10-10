@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import QuoteGenerator from "./components/QuoteGenerator";
-import ShareButtons from "./components/ShareButtons";
-import Button from "./components/Button";
+
 import "./css/app.css";
 
 class App extends Component {
@@ -9,10 +8,6 @@ class App extends Component {
         return (
             <div className="app-container">
                 <QuoteGenerator />
-                <div className="actions">
-                    <ShareButtons />
-                    <Button text="Give me another quote" />
-                </div>
                 <div className="footer">
                     <p>
                         API from {" "}

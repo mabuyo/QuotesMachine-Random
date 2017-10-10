@@ -1,5 +1,8 @@
 import React, { Component } from "react";
+import ShareButtons from "./ShareButtons";
+import Button from "./Button";
 import QuoteContainer from "./QuoteContainer";
+import "../css/quote_generator.css";
 
 class QuoteGenerator extends Component {
     constructor() {
@@ -19,10 +22,19 @@ class QuoteGenerator extends Component {
 
     render() {
         return (
-            <QuoteContainer
-                quote={this.state.quote}
-                author={this.state.author}
-            />
+            <div>
+                <QuoteContainer
+                    quote={this.state.quote}
+                    author={this.state.author}
+                />
+                <div className="actions">
+                    <ShareButtons />
+                    <Button
+                        text="Give me another quote"
+                        onClick={this.getRandomQuote.bind(this)}
+                    />
+                </div>
+            </div>
         );
     }
 }
