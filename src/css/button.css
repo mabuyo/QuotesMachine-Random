@@ -1,7 +1,22 @@
 .button {
     padding: 10px;
-    background-color: #00ffff;
+    background-color: #002b36;
     border-radius: 20px;
     border: none;
     font-size: 15px;
+    color: #EEFFFF;
+    outline: none;
+    box-shadow: 0 3px #6d6d6d;
+}
+
+.button:active {
+    background-color: #015064;
+    box-shadow: 0 4px #666;
+    transform: translateY(4px);
+  }
+
+.btn-transparent {
+    border-radius: 20px;
+    border: none;
+    background-color: #263238;
 }

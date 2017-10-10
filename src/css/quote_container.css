@@ -1,23 +1,25 @@
 .container {
-    margin: 10% auto auto auto;
+    /* margin: 10% auto auto auto; */
     padding: 10px 25px;
-    background-color: #119DA4;
-    color: black;
+    background-color: #002b36;
+    color: #EEFFFF;
     width: 60%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
     border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;    
 }
 
+
 .quote-text {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .quote-author {
     font-size: 1em;
     align-self: flex-end;
     margin-right: 15px;
+    color: #cb4b16;
 }

@@ -33,7 +33,7 @@ class QuoteGenerator extends Component {
 
     render() {
         return (
-            <div>
+            <div className="main-content">
                 <QuoteContainer
                     quote={this.state.quote}
                     author={this.state.author}
@@ -41,10 +41,20 @@ class QuoteGenerator extends Component {
                 <div className="actions">
                     <Button
                         icon={<TiSocialTwitter size={30} />}
+                        iconStyle={{
+                            color: "#00aced"
+                        }}
+                        buttonStyle={"btn-transparent"}
                         onClick={this.populateTweet.bind(this)}
                     />
                     <Button
                         text="new Quote()"
+                        textStyle={{
+                            color: "#2aa198",
+                            fontFamily: "'Roboto Mono', monospace",
+                            fontWeight: "bold"
+                        }}
+                        animate={true}
                         onClick={this.getRandomQuote.bind(this)}
                     />
                 </div>

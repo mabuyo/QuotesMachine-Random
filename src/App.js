@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import QuoteGenerator from "./components/QuoteGenerator";
+import Footer from "./components/Footer";
 import "./css/app.css";
 
 class App extends Component {
@@ -7,14 +8,7 @@ class App extends Component {
         return (
             <div className="app-container">
                 <QuoteGenerator />
-                <div className="footer">
-                    <p>
-                        API from {" "}
-                        <a href="http://quotes.stormconsultancy.co.uk/api">
-                            Storm Consultancy
-                        </a>
-                    </p>
-                </div>
+                <Footer />
             </div>
         );
     }

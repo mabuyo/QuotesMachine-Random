@@ -3,9 +3,16 @@ import "../css/button.css";
 
 const Button = props => {
     return (
-        <button className="button" onClick={props.onClick}>
-            {props.icon} {" "}
-            {props.text}
+        <button
+            className={
+                props.animate
+                    ? `button ${props.buttonStyle}`
+                    : "btn-transparent"
+            }
+            onClick={props.onClick}
+        >
+            <span style={props.iconStyle}>{props.icon}</span>
+            <span style={props.textStyle}>{props.text}</span>
         </button>
     );
 };
