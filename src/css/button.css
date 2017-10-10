@@ -2,4 +2,6 @@
     padding: 10px;
     background-color: #00ffff;
     border-radius: 20px;
+    border: none;
+    font-size: 15px;
 }

@@ -5,8 +5,8 @@ class QuoteContainer extends Component {
     render() {
         return (
             <div className="container">
-                <h1 className="quote-text">Quote goes here</h1>
-                <p className="quote-author">Author Name</p>
+                <h1 className="quote-text">{this.props.quote}</h1>
+                <p className="quote-author">{this.props.author}</p>
             </div>
         );
     }
