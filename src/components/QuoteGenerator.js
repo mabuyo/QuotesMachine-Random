@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ShareButtons from "./ShareButtons";
 import Button from "./Button";
 import QuoteContainer from "./QuoteContainer";
 import "../css/quote_generator.css";
@@ -10,6 +9,7 @@ class QuoteGenerator extends Component {
         super();
         this.state = { quote: "", author: "" };
     }
+
     componentWillMount() {
         this.getRandomQuote();
     }
@@ -44,7 +44,7 @@ class QuoteGenerator extends Component {
                         onClick={this.populateTweet.bind(this)}
                     />
                     <Button
-                        text="Give me another quote"
+                        text="new Quote()"
                         onClick={this.getRandomQuote.bind(this)}
                     />
                 </div>
